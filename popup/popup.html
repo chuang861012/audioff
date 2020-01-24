@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="popup.css" />
+        <title>Popup</title>
+    </head>
+    <body>
+        <div id="container">
+            <img src="loader.gif" alt="loader" id="loader" />
+        </div>
+        <div id="NoMediaElement" class="notice">
+            <p style="color:#d63031;font-size: 1.2rem;">Media not found in this page.</p>
+        </div>
+        <div id="SetSinkIdRequired" class="notice">
+            <p style="color:#d63031;font-size: 1.2rem;">Please enable setSinkId to switch audio device.</p>
+            <p>1. Open <span style="color:#0984e3">about:config</span> in firefox.</p>
+            <p>2. Search for <span style="color:#0984e3">media.setsinkid.enabled</span>.</p>
+            <p>3. Set the value to <span style="color:#0984e3">true</span>.</p>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

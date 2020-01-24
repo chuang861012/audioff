@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "audioff - audio device switcher",
+    "version": "1.0",
+    "description": "Select audio output device for each tab.",
+    "icons": {
+        "48": "logo48.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "logo48.png",
+        "default_title": "popup",
+        "default_popup": "popup/popup.html"
+    }
+}

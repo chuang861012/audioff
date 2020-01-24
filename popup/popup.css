@@ -1,0 +1,43 @@
+*,
+html,
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#loader {
+    width: 50px;
+    height: 50px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.notice{
+    display: none;
+    margin:1rem;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0;
+    padding: 0.5rem;
+    margin: 0.5rem .5rem;
+
+    background-color: white; 
+    border: none;
+    border-radius: 2px;
+    color: #008cba;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s all;
+}
+
+.btn:hover {
+    background-color: #008cba;
+    color: white;
+}
