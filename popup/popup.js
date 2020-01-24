@@ -2,6 +2,7 @@ const container = document.getElementById('container');
 const loader = document.getElementById('loader');
 const setSinkIdRequired = document.getElementById('SetSinkIdRequired');
 const noMediaElement = document.getElementById('NoMediaElement');
+const notAllowedError = document.getElementById('NotAllowedError');
 
 function init() {
     browser.tabs.query({ active: true, currentWindow: true },
@@ -16,6 +17,8 @@ function init() {
                     noMediaElement.style.display = 'block';
                 } else if (response === 'SetSinkIdRequired') {
                     setSinkIdRequired.style.display = 'block';
+                } else if (response === 'NotAllowedError') {
+                    notAllowedError.style.display = 'block';
                 } else {
                     response.map(device => {
                         if (device.kind === 'audiooutput') {

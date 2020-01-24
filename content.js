@@ -1,4 +1,5 @@
 function init() {
+    console.log('hello')
     browser.runtime.onMessage.addListener(
         (message, sender) => {
             if (message.action === 'get') {
@@ -9,7 +10,7 @@ function init() {
                     const result = navigator.mediaDevices.getUserMedia({ audio: true, video: false })
                         .then(() => navigator.mediaDevices.enumerateDevices())
                         .then(devices => devices)
-                        .catch(e => console.log(e));
+                        .catch(e => 'NotAllowedError');
                     return Promise.resolve(result);
                 }
             } else if (message.action === 'set') {
