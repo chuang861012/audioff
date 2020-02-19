@@ -1,6 +1,9 @@
 # audioff
 Select audio output device for each tab.
 
+## Install
+[Firefox](https://addons.mozilla.org/zh-TW/firefox/addon/audioff-audio-device-selector/)
+
 ## Usage
 A extension to select specific audio output device for each tab.
 Works on HTML5 `<audio> , <video>` element
