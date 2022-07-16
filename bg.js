@@ -15,15 +15,10 @@ browser.menus.create({
 browser.menus.onClicked.addListener(async (info, tab) => {
     switch (info.menuItemId) {
         case "s":
-            browser.tabs.query({ active: true, currentWindow: true },
-                (tabs) => {
-                    const activeTab = tabs[0];
-                    browser.tabs.sendMessage(activeTab.id,
-                        { action: 'set'},
-                        { 'frameId': 0 }
-                    )
-                }
-            )
+            await browser.tabs.executeScript(tab.id,{
+                file:"content.js",
+                allFrames: true
+            });
             break;
     }
 })
