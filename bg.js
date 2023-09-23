@@ -9,7 +9,7 @@ function onCreated() {
 browser.menus.create({
     id: "s",
     title: "Audio output select",
-    contexts: ["all"]
+    contexts: ["all", "tab"]
 }, onCreated);
 
 browser.menus.onClicked.addListener(async (info, tab) => {
