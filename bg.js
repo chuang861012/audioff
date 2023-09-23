@@ -15,9 +15,11 @@ browser.menus.create({
 browser.menus.onClicked.addListener(async (info, tab) => {
     switch (info.menuItemId) {
         case "s":
-            await browser.tabs.executeScript(tab.id,{
-                file:"content.js",
-                allFrames: true
+            await browser.scripting.executeScript({
+                files: ["content.js"],
+                target: {
+                    tabId: tab.id
+                }
             });
             break;
     }
