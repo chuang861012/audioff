@@ -33,7 +33,7 @@ Feel free to grab the source code there and minify it by yourself.
 
 ## For Firefox ESR or previous version user
 
-The new version of this add-on (2.0.0) only works on Firefox 92.0 and after.  
+The new version of this add-on (2.0.0) only works on Firefox 101.0 and after.  
 You can install the old version in the version history.
 
 ## Usage
