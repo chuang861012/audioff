@@ -5,7 +5,7 @@ You can simply right click on any page to open the context menu and click "Audio
 
 ## Install
 
-[Firefox](https://addons.mozilla.org/zh-TW/firefox/addon/audioff-audio-device-selector/)
+[Firefox](https://addons.mozilla.org/firefox/addon/audioff-audio-device-selector/)
 
 ## 2.1.0 update
 
